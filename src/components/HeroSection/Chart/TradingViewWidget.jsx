@@ -45,15 +45,15 @@ function TradingViewWidget() {
 
     return (
         <>
-            <div className='flex justify-between items-center mb-4'>
+            <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4'>
                 <p className='text-base font-semibold'>Bitcoin Price Chart {"(USD)"}</p>
 
-                <ul className='flex justify-center items-center gap-2 text-xs'>
+                <ul className='flex justify-center items-center gap-1 sm:gap-2 text-xs'>
                     {
                         timeFrames.map((timeFrame) => (
                             <li onClick={() => {
                                 setSelectedTimeFrame(timeFrame.name);
-                            }} key={timeFrame.id} className={`cursor-pointer px-2 ${selectedTimeFrame == timeFrame.name ? "bg-[#e2ecfe] text-[#0140fe] rounded-xl px-2 py-1" : "text-[#70788a]"}`}>{timeFrame.name}</li>
+                            }} key={timeFrame.id} className={`cursor-pointer text-xs sm:text-sm px-1 sm:px-2 ${selectedTimeFrame == timeFrame.name ? "bg-[#e2ecfe] text-[#0140fe] rounded-xl p-1 sm:px-2 sm:py-1" : "text-[#70788a]"}`}>{timeFrame.name}</li>
                         ))
                     }
                 </ul>
