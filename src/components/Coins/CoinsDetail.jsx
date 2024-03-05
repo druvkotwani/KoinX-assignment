@@ -1,12 +1,12 @@
 import React from 'react'
-import { BitcoinLogo } from '../../../utils/Icons'
+import { BitcoinLogo } from '../../utils/Icons'
 import TradingViewWidget from '../Chart/TradingViewWidget'
 
 function CoinsDetail() {
     return (
-        <div className=' w-full m-4 '>
+        <div className='sm:bg-white w-full  '>
 
-            <div className='sm:bg-white flex gap-2 justify-start items-center mb-4'>
+            <div className=' sm:bg-white  flex gap-2 justify-start items-center mb-4'>
                 <BitcoinLogo width={30} height={30} />
 
                 {/* Name and Short */}
@@ -19,7 +19,7 @@ function CoinsDetail() {
             </div>
 
             {/*    Price */}
-            <div className='bg-white rounded-md px-4'>
+            <div className=' bg-white rounded-md border px-4   '>
                 <div className='flex flex-col justify-center items-start gap-2 py-4 border-b '>
                     <div className='flex justify-start items-center gap-8 mt-2'>
                         <p className='font-[540] text-3xl '>$46,953.04</p>
@@ -31,7 +31,8 @@ function CoinsDetail() {
                     </div>
                     <p className='text-sm font-medium'>₹ 39,42,343</p>
                 </div>
-                <div className='mt-4'>
+
+                <div className='mt-4   '>
                     <TradingViewWidget />
                 </div>
             </div>

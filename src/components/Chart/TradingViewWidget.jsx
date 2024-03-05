@@ -13,7 +13,7 @@ const timeFrames = [
 
 function TradingViewWidget() {
     const container = useRef();
-    const [selectedTimeFrame, setSelectedTimeFrame] = useState('1H');
+    const [selectedTimeFrame, setSelectedTimeFrame] = useState('1M');
 
     useEffect(
         () => {
@@ -28,12 +28,11 @@ function TradingViewWidget() {
               "interval": "D",
               "timezone": "Etc/UTC",
               "theme": "light",
-              "style": "3",
+              "style": "2",
               "locale": "en",
               "enable_publishing": false,
               "hide_top_toolbar": true,
               "hide_legend": true,
-              "save_image": false,
               "calendar": false,
               "hide_volume": true,
               "support_host": "https://www.tradingview.com"
@@ -53,14 +52,16 @@ function TradingViewWidget() {
                         timeFrames.map((timeFrame) => (
                             <li onClick={() => {
                                 setSelectedTimeFrame(timeFrame.name);
-                            }} key={timeFrame.id} className={`cursor-pointer text-xs sm:text-sm px-1 sm:px-2 ${selectedTimeFrame == timeFrame.name ? "bg-[#e2ecfe] text-[#0140fe] rounded-xl p-1 sm:px-2 sm:py-1" : "text-[#70788a]"}`}>{timeFrame.name}</li>
+                            }} key={timeFrame.id} className={`cursor-pointer text-xs sm:text-sm px-1 sm:px-2  ${selectedTimeFrame == timeFrame.name ? "bg-[#e2ecfe] text-[#0140fe] rounded-xl p-1 sm:px-2 sm:py-1" : "text-[#70788a]"}`}>{timeFrame.name}</li>
                         ))
                     }
                 </ul>
             </div>
-            <div className="tradingview-widget-container border-none outline-none" ref={container} style={{ height: "100%", width: "100%" }}>
-                <div className="tradingview-widget-container__widget border-none outline-none" style={{ height: "calc(100% - 32px)", width: "100%" }}></div>
+            <div className="tradingview-widget-container border-none outline-none mb-4 h-full" ref={container} style={{ height: "100%", width: "100%" }}>
+                <div className="tradingview-widget-container__widget border-none outline-none h-full" style={{ height: "calc(100% - 32px)", width: "100%" }}></div>
             </div>
+
+
         </>
     );
 }
