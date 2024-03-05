@@ -1,9 +1,10 @@
 import React from 'react'
 import { BitcoinLogo } from '../../../utils/Icons'
+import TradingViewWidget from '../Chart/TradingViewWidget'
 
 function CoinsDetail() {
     return (
-        <div className='bg-white '>
+        <div className='bg-white w-full '>
 
             <div className='flex gap-2 justify-center items-center'>
                 <BitcoinLogo width={24} height={24} />
@@ -17,9 +18,7 @@ function CoinsDetail() {
                 <span className='text-xs p-2 rounded-md text-white bg-[#768396]'>Rank #1</span>
             </div>
 
-            <div>
-
-            </div>
+            <TradingViewWidget />
         </div>
     )
 }
