@@ -1,6 +1,7 @@
 import CoinsDetail from "./components/Coins/CoinsDetail";
 import Fundamentals from "./components/Fundamentals/Fundamentals";
 import Navbar from "./components/Navbar/Navbar";
+import TrendingCoins from "./components/Trending/TrendingCoins";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <CoinsDetail />
         <Fundamentals />
       </div>
+      <TrendingCoins />
     </>
   )
 }
