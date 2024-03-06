@@ -27,6 +27,7 @@ const KeyEvents = () => {
     const settings = {
         focusOnSelect: true,
         infinite: true,
+        autoScroll: true,
         slidesToShow: 1,
         arrows: false,
         initialSlide: 0,
