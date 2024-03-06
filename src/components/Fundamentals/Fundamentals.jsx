@@ -4,9 +4,9 @@ import { InfoIcon } from '../../utils/Icons'
 const Fundamentals = () => {
     return (
         <div className='bg-white my-2 rounded-md font-sans' >
-            <div className='flex items-center '>
-                <h1 className='font-semibold text-xl pl-4 pr-2'>Fundamentals</h1>
-                <InfoIcon />
+            <div className='flex items-center justify-start  '>
+                <h1 className='font-semibold text-xl pl-4 pr-2 text-[#44465a]'>Fundamentals</h1>
+                <InfoIcon className='mt-1' />
             </div>
             <ul className='px-4 text-sm font-sans font-[550]'>
                 <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2'>

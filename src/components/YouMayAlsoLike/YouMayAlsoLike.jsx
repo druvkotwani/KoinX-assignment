@@ -7,7 +7,7 @@ const YouMayAlsoLike = ({ trendingCoins }) => {
         focusOnSelect: true,
         infinite: true,
         slidesToShow: 2.2,
-
+        // slidesToScroll: 1,
         initialSlide: 0,
         // responsive: [
         //     {

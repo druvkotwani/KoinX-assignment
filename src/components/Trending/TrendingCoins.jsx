@@ -18,7 +18,7 @@ const TrendingCoins = ({ trendingCoins }) => {
                                 </div>
                                 <span className={`text-sm  px-2 py-1 font-[550]   ${coin.item.data.price_change_percentage_24h.usd > 0 ? `text-[#15b179] bg-[#eaf8f4]` : `text-[red] bg-[#fdeae9]`}
   rounded-md`}>
-                                    {coin.item.data.price_change_percentage_24h.usd > 0 ? `▲${coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%` : `▼${coin.item.data.price_change_percentage_24h.usd.toFixed(2) * -1}%`}
+                                    {coin.item.data.price_change_percentage_24h.usd > 0 ? `▲ ${coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%` : `▼ ${coin.item.data.price_change_percentage_24h.usd.toFixed(2) * -1}%`}
                                 </span>
                             </li>
                         )
