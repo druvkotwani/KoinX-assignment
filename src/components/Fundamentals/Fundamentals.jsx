@@ -5,10 +5,10 @@ const Fundamentals = () => {
     return (
         <div className='bg-white my-2 rounded-md font-sans' >
             <div className='flex items-center justify-start  '>
-                <h1 className='font-semibold text-xl pl-4 pr-2 text-[#44465a]'>Fundamentals</h1>
+                <h1 className='font-semibold text-xl pl-2 pr-2 text-[#44465a]'>Fundamentals</h1>
                 <InfoIcon className='mt-1' />
             </div>
-            <ul className='px-4 text-sm font-sans font-[550]'>
+            <ul className='px-2 text-sm font-sans font-[550]'>
                 <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2'>
                     <span className='text-[#778296]  '>Bitcoin Price</span>
                     <span className=''>$16,815.46</span>

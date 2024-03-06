@@ -3,7 +3,7 @@ import { RightArrow } from '../../utils/Icons'
 
 const GetStarted = () => {
     return (
-        <div className="bg-[#0052fe] rounded-2xl font-sans  text-white flex items-center justify-center flex-col p-4 my-6">
+        <div className="bg-[#0052fe] rounded-2xl font-sans  text-white flex items-center justify-center flex-col p-4 ">
             <img alt="calculator-asset" loading="lazy" width="150" height="127" className="mt-2" src="https://www.koinx.com/_next/static/media/CryptoGuide.555c0e7d.svg" />
             <h3 className="font-semibold text-xl mt-3">Get Started with KoinX for FREE</h3>
 

@@ -20,7 +20,7 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <div className="mx-4 mt-2 flex flex-col gap-2 ">
+      <div className="mx-4 mt-2 flex flex-col gap-6 ">
         <CoinsDetail />
         <Performance />
         <Sentiment />

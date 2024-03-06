@@ -24,7 +24,7 @@ const persons = [
 
 const Team = ({ trendingCoins }) => {
     return (
-        <div className='bg-white rounded-md px-2 font-sans pb-2 '>
+        <div className='bg-white rounded-lg px-2 font-sans pb-2 '>
             <h1 className='font-bold text-2xl pt-4 '>Team</h1>
             <p className=' text-[16px] pt-2 mb-2'>
                 Lorem ipsum dolor sit amet consectetur. Id adipisicing elit. Eum autem voluptatem tempore nesciunt aliquam dolore excepturi modi minima mollitia ad quaerat consequuntur dignissimos.

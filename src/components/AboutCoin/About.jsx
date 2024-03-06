@@ -3,7 +3,7 @@ import { RightArrow } from '../../utils/Icons'
 
 const About = () => {
     return (
-        <div className=" bg-white rounded-md px-2 font-sans pb-2 ">
+        <div className=" bg-white rounded-lg px-2 font-sans pb-2 ">
             <h1 className='font-bold text-2xl pt-4 '>About Bitcoin</h1>
 
             <h2 className='font-semibold text-lg pt-4 '>What is Bitcoin?</h2>
