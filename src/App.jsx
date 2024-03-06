@@ -1,3 +1,4 @@
+import About from "./components/AboutCoin/About";
 import CoinsDetail from "./components/Coins/CoinsDetail";
 import Fundamentals from "./components/Fundamentals/Fundamentals";
 import GetStarted from "./components/GetStarted/GetStarted";
@@ -11,6 +12,7 @@ export default function App() {
       <div className="mx-4 mt-2">
         <CoinsDetail />
         <Fundamentals />
+        <About />
         <GetStarted />
       </div>
       <TrendingCoins />

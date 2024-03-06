@@ -12,7 +12,7 @@ const TrendingCoins = () => {
     }, [])
     return (
         <div className='bg-white px-4 rounded-md'>
-            <h1 className='font-semibold text-xl pt-4   '>Trending Coins {`(24h)`}</h1>
+            <h1 className='font-semibold text-2xl pt-4   '>Trending Coins {`(24h)`}</h1>
 
             <ul>
                 {
