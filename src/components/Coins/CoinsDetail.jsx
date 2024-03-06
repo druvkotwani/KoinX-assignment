@@ -25,7 +25,7 @@ function CoinsDetail() {
                         <p className='font-[540] text-3xl '>$46,953.04</p>
 
                         <div className='flex justify-center items-center gap-2 ml-2'>
-                            <span className='text-sm  px-2 py-1 font-meid bg-[#eaf8f4]  text-[#15b179] rounded-md '>▲ 2.51%</span>
+                            <span className='text-sm  px-2 py-1 font-medium bg-[#eaf8f4]  text-[#15b179] rounded-md '>▲ 2.51%</span>
                             <span className='text-sm font-[540]  text-[#5d667b] '>(24H)</span>
                         </div>
                     </div>

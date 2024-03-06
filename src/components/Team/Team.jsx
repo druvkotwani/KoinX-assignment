@@ -1,4 +1,5 @@
 import React from 'react'
+import YouMayAlsoLike from '../YouMayAlsoLike/YouMayAlsoLike'
 
 const persons = [
     {
@@ -21,12 +22,12 @@ const persons = [
     },
 ]
 
-const Team = () => {
+const Team = ({ trendingCoins }) => {
     return (
         <div className='bg-white rounded-md px-2 font-sans pb-2 '>
             <h1 className='font-bold text-2xl pt-4 '>Team</h1>
-            <p className=' text-md pt-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem voluptatem tempore nesciunt aliquam dolore excepturi modi minima mollitia ad quaerat consequuntur dignissimos.
+            <p className=' text-[16px] pt-2 mb-2'>
+                Lorem ipsum dolor sit amet consectetur. Id adipisicing elit. Eum autem voluptatem tempore nesciunt aliquam dolore excepturi modi minima mollitia ad quaerat consequuntur dignissimos.
             </p>
 
             {
@@ -41,7 +42,7 @@ const Team = () => {
                     )
                 })
             }
-
+            <YouMayAlsoLike trendingCoins={trendingCoins} />
         </div>
 
     )

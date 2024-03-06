@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
-const TrendingCoins = () => {
-    const [trendingCoins, setTrendingCoins] = useState([])
-    useEffect(() => {
-        fetch('https://api.coingecko.com/api/v3/search/trending')
-            .then(response => response.json())
-            .then(data => {
-                setTrendingCoins(data.coins)
-                console.log(data.coins)
-            })
-    }, [])
+const TrendingCoins = ({ trendingCoins }) => {
+
     return (
         <div className='bg-white px-4 rounded-md'>
             <h1 className='font-semibold text-2xl pt-4   '>Trending Coins {`(24h)`}</h1>

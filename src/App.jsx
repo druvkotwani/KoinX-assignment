@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import About from "./components/AboutCoin/About";
 import CoinsDetail from "./components/Coins/CoinsDetail";
 import Fundamentals from "./components/Fundamentals/Fundamentals";
@@ -7,6 +8,14 @@ import Team from "./components/Team/Team";
 import TrendingCoins from "./components/Trending/TrendingCoins";
 
 export default function App() {
+  const [trendingCoins, setTrendingCoins] = useState([])
+  useEffect(() => {
+    fetch('https://api.coingecko.com/api/v3/search/trending')
+      .then(response => response.json())
+      .then(data => {
+        setTrendingCoins(data.coins)
+      })
+  }, [])
   return (
     <>
       <Navbar />
@@ -14,10 +23,10 @@ export default function App() {
         <CoinsDetail />
         <Fundamentals />
         <About />
-        <Team />
+        <Team trendingCoins={trendingCoins} />
         <GetStarted />
       </div>
-      <TrendingCoins />
+      <TrendingCoins trendingCoins={trendingCoins} />
     </>
   )
 }
