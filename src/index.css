@@ -6,3 +6,6 @@ body {
   background-color: #eef2f4;
   font-family: sans-serif;
 }
+.slick-slide > div {
+  margin: 0 4px;
+}

@@ -43,6 +43,7 @@ const Team = ({ trendingCoins }) => {
                 })
             }
             <YouMayAlsoLike trendingCoins={trendingCoins} />
+            <YouMayAlsoLike trendingCoins={trendingCoins} />
         </div>
 
     )
