@@ -4,7 +4,7 @@ import TradingViewWidget from '../Chart/TradingViewWidget'
 
 function CoinsDetail() {
     return (
-        <div className='sm:bg-white w-full  '>
+        <div className='sm:bg-white w-full'>
 
             <div className=' sm:bg-white  flex gap-2 justify-start items-center mb-4'>
                 <BitcoinLogo width={30} height={30} />
