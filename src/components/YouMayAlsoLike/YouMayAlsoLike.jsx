@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import Slider from "react-slick";
 
-const YouMayAlsoLike = ({ trendingCoins }) => {
+const YouMayAlsoLike = ({ trendingCoins, heading = 'You May Also Like' }) => {
     const settings = {
         focusOnSelect: true,
 
@@ -40,7 +40,7 @@ const YouMayAlsoLike = ({ trendingCoins }) => {
     };
     return (
         <div className='mb-2'>
-            <h1 className='font-bold text-xl pt-2 px-2'>You May Also Like</h1>
+            <h1 className='font-bold text-xl pt-2 px-2'>{heading}</h1>
 
             <div className='slider-container mt-2'>
                 <Slider {...settings} className='  ' >
