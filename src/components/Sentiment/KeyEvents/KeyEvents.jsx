@@ -38,6 +38,7 @@ const KeyEvents = () => {
 
         slidesToShow: 2,
         slidesToScroll: 2,
+        arrows: false,
         initialSlide: 0,
         responsive: [
             {

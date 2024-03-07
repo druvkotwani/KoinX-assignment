@@ -6,7 +6,7 @@ const YouMayAlsoLike = ({ trendingCoins }) => {
     const settings = {
         focusOnSelect: true,
 
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 4,
         initialSlide: 0,
         responsive: [
