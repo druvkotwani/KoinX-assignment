@@ -41,6 +41,7 @@ export default function App() {
           <Performance />
           <Sentiment />
           <About />
+          <Team trendingCoins={trendingCoins} />
         </div>
         <div className="flex flex-col w-2/6  gap-4 ">
           <GetStarted />
