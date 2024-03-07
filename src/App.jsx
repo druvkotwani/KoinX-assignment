@@ -56,7 +56,7 @@ export default function App() {
       <div className="md:hidden">
         <TrendingCoins trendingCoins={trendingCoins} />
       </div>
-      <div className="bg-white p-12 mt-12 hidden sm:block">
+      <div className="bg-white p-12 mt-12 hidden sm:flex  flex-col gap-4">
         <YouMayAlsoLike trendingCoins={trendingCoins} />
         <YouMayAlsoLike trendingCoins={trendingCoins} />
       </div>
