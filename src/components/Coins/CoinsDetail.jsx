@@ -1,23 +1,34 @@
 import React from 'react'
-import { BitcoinLogo } from '../../utils/Icons'
+import { BitcoinLogo, Doge, Ethereum } from '../../utils/Icons'
 import TradingViewWidget from '../Chart/TradingViewWidget'
-
+import { useParams } from 'react-router-dom'
 function CoinsDetail() {
+    const { coinName } = useParams();
     return (
         <div className='md:bg-white md:rounded-lg '>
 
             <div className='  md:bg-white md:rounded-lg  flex gap-2 justify-start items-center mb-4 sm:mb-0 sm:p-4 '>
-                <BitcoinLogo width={30} height={30} />
+                {coinName === 'Bitcoin' && <BitcoinLogo width={30} height={30} />}
+                {coinName === 'Ethereum' && <Ethereum width={30} height={30} />}
+                {coinName === 'Dogecoin' && <Doge width={30} height={30} />}
 
 
 
                 {/* Name and Short */}
                 <div className='flex justify-center items-center gap-2  sm:mr-2'>
-                    <p className='font-semibold text-xl '>Bitcoin</p>
-                    <span className='text-sm font-semibold  text-[#5d667b] '>BTC</span>
+                    <p className='font-semibold text-xl '>{coinName}</p>
+                    <span className='text-sm font-semibold  text-[#5d667b] '>
+                        {coinName === 'Bitcoin' && "BTC"}
+                        {coinName === 'Ethereum' && "ETC"}
+                        {coinName === 'Dogecoin' && "DOGE"}
+                    </span>
                 </div>
                 {/* Rank */}
-                <span className='text-sm px-2 py-1 rounded sm:rounded-md  ml-4 sm:ml-8 sm:py-[6px] text-white bg-[#768396]'>Rank #1</span>
+                <span className='text-sm px-2 py-1 rounded sm:rounded-md  ml-4 sm:ml-8 sm:py-[6px] text-white bg-[#768396]'>Rank
+                    {coinName === 'Bitcoin' && " #1"}
+                    {coinName === 'Ethereum' && " #2"}
+                    {coinName === 'Dogecoin' && " #3"}
+                </span>
             </div>
 
             {/*    Price */}

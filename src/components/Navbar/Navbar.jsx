@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
 import { Close, Hamburger } from '../../utils/Icons'
+import { Link } from 'react-router-dom'
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <>
             <div className='w-full flex justify-between items-center px-8 bg-white'>
                 {/* Logo */}
-                <img src='https://www.koinx.com/_next/static/media/Logo.5f2ad8d5.svg' alt='KoinX Logo' />
-
+                <Link to='/'>
+                    <img src='https://www.koinx.com/_next/static/media/Logo.5f2ad8d5.svg' alt='KoinX Logo' />
+                </Link>
 
                 <div className='flex sm:gap-4 lg:gap-6 xl:gap-8 justify-center items-center'>
                     {/* Navigation */}
