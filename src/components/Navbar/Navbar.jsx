@@ -28,7 +28,7 @@ const Navbar = () => {
             </div>
             {
                 isOpen &&
-                <div className={`h-32 w-full bg-white flex items-center justify-center flex-col border-t`}>
+                <div className={`h-32 sm:hidden w-full bg-white flex items-center justify-center flex-col border-t`}>
                     <ul className='flex flex-col justify-center items-start font-semibold  text-base'>
                         <li className='cursor-pointer '>Crypto Taxes</li>
                         <li className='cursor-pointer '>Free Tools</li>
