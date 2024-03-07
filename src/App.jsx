@@ -7,6 +7,7 @@ import Team from "./components/Team/Team";
 import TrendingCoins from "./components/Trending/TrendingCoins";
 import Sentiment from "./components/Sentiment/Sentiment";
 import Performance from "./components/Performance/Performance";
+import TotalSectioins from "./components/Sections/TotalSectioins";
 
 export default function App() {
   const [trendingCoins, setTrendingCoins] = useState([])
@@ -38,6 +39,7 @@ export default function App() {
       <div className="md:flex justify-between  gap-6 mx-4 my-4">
         <div className="flex flex-col md:w-[60%] lg:w-[70%] xl:w-[75%] w-[100%]  gap-6">
           <CoinsDetail />
+          <TotalSectioins />
           <Performance />
           <Sentiment />
           <About />
