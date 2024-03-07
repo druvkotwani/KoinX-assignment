@@ -35,8 +35,14 @@ export default function App() {
       </div> */}
 
       {/* <TrendingCoins trendingCoins={trendingCoins} /> */}
+      <div className="mx-4 mt-2">
+        <span className=' text-sm px-2 text-[#5d667b]'>Cryptocurrencies</span>
+        <span className='font-light  text-sm font-mono tracking-[-0.2em] '>{">>"}</span>
+        <span className='text-sm px-2 font-semibold font-sans'>Bitcoin</span>
+      </div>
 
       <div className="md:flex justify-between  gap-6 mx-4 my-4">
+
         <div className="flex flex-col md:w-[60%] lg:w-[70%] xl:w-[75%] w-[100%]  gap-6">
           <CoinsDetail />
           <TotalSectioins />
