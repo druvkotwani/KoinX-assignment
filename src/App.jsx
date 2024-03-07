@@ -8,6 +8,7 @@ import TrendingCoins from "./components/Trending/TrendingCoins";
 import Sentiment from "./components/Sentiment/Sentiment";
 import Performance from "./components/Performance/Performance";
 import TotalSectioins from "./components/Sections/TotalSectioins";
+import Tokenomics from "./components/Tokenomics/Tokenomics";
 
 export default function App() {
   const [trendingCoins, setTrendingCoins] = useState([])
@@ -20,21 +21,8 @@ export default function App() {
   }, [])
   return (
     <div>
-
       <Navbar />
 
-
-      {/* <div className="mx-4 mt-2 flex flex-col gap-6 sm:hidden ">
-
-        <CoinsDetail />
-        <Performance />
-        <Sentiment />
-        <About />
-        <Team trendingCoins={trendingCoins} />
-        <GetStarted />
-      </div> */}
-
-      {/* <TrendingCoins trendingCoins={trendingCoins} /> */}
       <div className="mx-4 mt-2">
         <span className=' text-sm px-2 text-[#5d667b]'>Cryptocurrencies</span>
         <span className='font-light  text-sm font-mono tracking-[-0.2em] '>{">>"}</span>
@@ -42,13 +30,13 @@ export default function App() {
       </div>
 
       <div className="md:flex justify-between  gap-6 mx-4 my-4">
-
         <div className="flex flex-col md:w-[60%] lg:w-[70%] xl:w-[75%] w-[100%]  gap-6">
           <CoinsDetail />
           <TotalSectioins />
           <Performance />
           <Sentiment />
           <About />
+          <Tokenomics />
           <Team trendingCoins={trendingCoins} />
         </div>
 

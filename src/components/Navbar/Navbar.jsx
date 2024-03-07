@@ -11,9 +11,9 @@ const Navbar = () => {
                 {/* Navigation */}
                 <nav className='hidden sm:block'>
                     <ul className='flex sm:gap-2 lg:gap-4 xl:gap-6 font-semibold  text-base'>
-                        <li>Crypto Taxes</li>
-                        <li>Free Tools</li>
-                        <li>Resource Center</li>
+                        <li className='cursor-pointer '>Crypto Taxes</li>
+                        <li className='cursor-pointer '>Free Tools</li>
+                        <li className='cursor-pointer '>Resource Center</li>
                     </ul>
                 </nav>
 

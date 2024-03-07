@@ -26,8 +26,12 @@ body {
 .slick-next:before {
   content: ">";
   color: black;
+  line-height: 0;
+  margin-left: 2px;
 }
 .slick-prev:before {
   content: "<";
   color: black;
+  line-height: 0;
+  margin-right: 2px;
 }
