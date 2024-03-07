@@ -4,9 +4,9 @@ import TradingViewWidget from '../Chart/TradingViewWidget'
 
 function CoinsDetail() {
     return (
-        <div className='sm:bg-white lg:rounded-lg '>
+        <div className='md:bg-white md:rounded-lg '>
 
-            <div className=' sm:bg-white lg:rounded-lg  flex gap-2 justify-start items-center mb-4 sm:mb-0 sm:p-4 '>
+            <div className='  md:bg-white md:rounded-lg  flex gap-2 justify-start items-center mb-4 sm:mb-0 sm:p-4 '>
                 <BitcoinLogo width={30} height={30} />
 
 
@@ -21,7 +21,7 @@ function CoinsDetail() {
             </div>
 
             {/*    Price */}
-            <div className=' bg-white rounded-lg sm:border-none border px-4  lg:h-[72vh] '>
+            <div className=' bg-white rounded-lg sm:border-none border px-4 md:h-[580px] h-[500px]    '>
                 <div className='flex flex-col justify-center items-start gap-2 py-4 sm:pt-0 border-b '>
                     <div className='flex justify-start items-center gap-8 mt-2'>
                         <p className='font-[540] text-3xl '>$46,953.04</p>
@@ -34,7 +34,7 @@ function CoinsDetail() {
                     <p className='text-sm font-medium'>₹ 39,42,343</p>
                 </div>
 
-                <div className='mt-4   lg:h-[50vh]'>
+                <div className='mt-4   md:h-[400px] h-[300px]'>
                     <TradingViewWidget />
                 </div>
             </div>
