@@ -18,7 +18,7 @@ export default function App() {
       })
   }, [])
   return (
-    <>
+    <div>
 
       <Navbar />
 
@@ -35,21 +35,21 @@ export default function App() {
 
       {/* <TrendingCoins trendingCoins={trendingCoins} /> */}
 
-      <div className="flex justify-between gap-6  mx-4 my-4">
-        <div className="flex flex-col w-full gap-6">
+      <div className="flex justify-between   gap-6 mx-4 my-4">
+        <div className="flex flex-col md:w-[60%] lg:w-[70%] xl:w-[75%] w-[100%]  gap-6">
           <CoinsDetail />
           <Performance />
           <Sentiment />
           <About />
           <Team trendingCoins={trendingCoins} />
         </div>
-        <div className="flex flex-col w-2/6  gap-4 ">
+        <div className=" flex-col  md:w-[40%] lg:w-[30%] xl:w-[25%]  gap-4 hidden md:flex ">
           <GetStarted />
 
           <TrendingCoins trendingCoins={trendingCoins} />
         </div>
       </div>
 
-    </>
+    </div>
   )
 }

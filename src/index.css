@@ -9,3 +9,25 @@ body {
 .slick-slide > div {
   margin: 0 4px;
 }
+
+.slick-next,
+.slick-prev {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.slick-dots li button:before,
+.slick-next:before,
+.slick-prev:before {
+  font-family: sans-serif;
+}
+
+.slick-next:before {
+  content: ">";
+  color: black;
+}
+.slick-prev:before {
+  content: "<";
+  color: black;
+}

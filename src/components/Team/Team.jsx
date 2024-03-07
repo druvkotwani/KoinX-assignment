@@ -24,7 +24,7 @@ const persons = [
 
 const Team = ({ trendingCoins }) => {
     return (
-        <div className='bg-white rounded-lg px-2 font-sans pb-2 lg:px-4 '>
+        <div className='bg-white rounded-lg px-2 font-sans pb-2 sm:px-4 '>
             <h1 className='font-bold text-2xl pt-4 '>Team</h1>
             <p className=' text-[16px] pt-2 mb-2'>
                 Lorem ipsum dolor sit amet consectetur. Id adipisicing elit. Eum autem voluptatem tempore nesciunt aliquam dolore excepturi modi minima mollitia ad quaerat consequuntur dignissimos.
@@ -33,8 +33,8 @@ const Team = ({ trendingCoins }) => {
             {
                 persons.map((person, index) => {
                     return (
-                        <div key={index} className='bg-[#e8f5fc] flex items-center justify-center lg:flex-row lg:gap-6   flex-col px-2 py-3 rounded-lg my-6 lg:px-6'>
-                            <div className=' lg:flex flex-col  justify-center items-center '>
+                        <div key={index} className='bg-[#e8f5fc] flex items-center justify-center sm:flex-row sm:gap-6   flex-col px-2 py-3 rounded-lg my-6 lg:px-6'>
+                            <div className=' sm:flex flex-col  justify-center items-center '>
                                 <img src={person.image} alt="team" className='w-24 text-center max-w-fit   h-24 rounded-md' />
                                 <h1 className='font-semibold text-center'>{person.name}</h1>
                                 <p className='text-xs  text-[#5d667b] text-center '>{person.designation}</p>
@@ -44,8 +44,8 @@ const Team = ({ trendingCoins }) => {
                     )
                 })
             }
-            {/* <YouMayAlsoLike trendingCoins={trendingCoins} /> */}
-            {/* <YouMayAlsoLike trendingCoins={trendingCoins} /> */}
+            <YouMayAlsoLike trendingCoins={trendingCoins} />
+            <YouMayAlsoLike trendingCoins={trendingCoins} />
         </div>
 
     )
