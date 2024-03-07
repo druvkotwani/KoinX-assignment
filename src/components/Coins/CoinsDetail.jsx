@@ -6,17 +6,17 @@ function CoinsDetail() {
     const { coinName } = useParams();
     const [price, setPrice] = useState(46953.04);
     const [change, setChange] = useState(2.51);
-
-    let priceInr = price * 80.5;
+    const [priceInr, setPriceInr] = useState(46953.04 * 74.5)
 
     useEffect(() => {
         const lowerCaseCoinName = coinName.toLowerCase();
 
-        fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${lowerCaseCoinName}&vs_currencies=usd&include_24hr_change=true`)
+        fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${lowerCaseCoinName}&vs_currencies=inr%2Cusd&include_24hr_change=true`)
             .then(response => response.json())
             .then(data => {
                 setPrice(data[lowerCaseCoinName].usd)
                 setChange(data[lowerCaseCoinName].usd_24h_change)
+                setPriceInr(data[lowerCaseCoinName].inr)
 
             })
     }, [])
