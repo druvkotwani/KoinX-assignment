@@ -16,7 +16,7 @@ const About = () => {
 
             <h2 className='font-semibold text-lg pt-4 lg:text-xl'>Alread holding Crypto?</h2>
 
-            <div className='lg:flex justify-start  gap-2 items-center lg:border-b '>
+            <div className='sm:flex md:block lg:flex justify-start  gap-2 items-center sm:border-b '>
                 <div className=' bg-gradient-to-br from-teal-400 text-white to-sky-800 btn rounded-md flex py-3 justify-between items-center gap-2 my-3 px-3'>
                     <img src="https://susteam.at/static/pictures/use-cases3.png" alt="holding-crypto" className='w-32   mr-2    h-28 rounded-lg' />
 
@@ -42,7 +42,7 @@ const About = () => {
                 </div>
             </div>
 
-            <p className='py-2 pb-4 hidden lg:block'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati modi deleniti quasi! Ipsum doloremque, accusamus nisi rem, eligendi provident facere officiis voluptatibus quos similique dolorum magnam et molestias fuga.</p>
+            <p className='py-2 pb-4 hidden sm:block'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati modi deleniti quasi! Ipsum doloremque, accusamus nisi rem, eligendi provident facere officiis voluptatibus quos similique dolorum magnam et molestias fuga.</p>
         </div>
 
     )

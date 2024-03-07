@@ -11,7 +11,7 @@ const items = [
     },
     {
         heading: 'Loerem Ipsum psum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incid',
-        content: 'Lorem ipsum dolor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        content: 'Lorem ipsum dolor sit . Sed do eiusmod elit. Sl Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
         color: 'bg-[#e8f8f4]',
     },
     {
@@ -48,20 +48,20 @@ const KeyEvents = () => {
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 792,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 600,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
-            }
+            },
         ],
         speed: 500,
         nextArrow: <SampleNextArrow className='' />,
