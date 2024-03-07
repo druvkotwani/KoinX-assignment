@@ -49,7 +49,7 @@ const YouMayAlsoLike = ({ trendingCoins }) => {
                             return (
                                 coin.item.data.price.length < 10 &&
                                 (
-                                    <div key={index} className='border flex gap-2 flex-col justify-center items-start p-2 rounded-md bg-[#fefefe] '>
+                                    <div key={index} className='cursor-grab border flex gap-2 flex-col justify-center items-start p-2 rounded-md bg-[#fefefe] '>
                                         <div className='flex justify-start items-center'>
                                             <img src={coin.item.large} alt="trending-coin" className='w-4 h-4 lg:w-6 lg:h-6' />
                                             <p className='text-xs ml-1 lg:text-sm'>{coin.item.symbol}</p>

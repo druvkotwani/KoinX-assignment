@@ -80,7 +80,7 @@ const KeyEvents = () => {
                     {
                         items.map((item, index) => {
                             return (
-                                <div key={index} className={`rounded-md px-3 py-6  justify-center items-start   flex gap-6 ${item.color}`}>
+                                <div key={index} className={`cursor-grab rounded-md px-3 py-6  justify-center items-start   flex gap-6 ${item.color}`}>
                                     {
                                         index % 2 == 0 ? (
                                             <div className="bg-[#0082FF] p-3 w-12 h-12 rounded-full justify-center flex items-center">
