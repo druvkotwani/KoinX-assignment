@@ -19,7 +19,7 @@ function CoinsDetail() {
             </div>
 
             {/*    Price */}
-            <div className=' bg-white rounded-lg border px-4   '>
+            <div className=' bg-white rounded-lg  px-4   '>
                 <div className='flex flex-col justify-center items-start gap-2 py-4 border-b '>
                     <div className='flex justify-start items-center gap-8 mt-2'>
                         <p className='font-[540] text-3xl '>$46,953.04</p>

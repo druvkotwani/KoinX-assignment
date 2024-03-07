@@ -16,27 +16,29 @@ const About = () => {
 
             <h2 className='font-semibold text-lg pt-4 '>Alread holding Crypto?</h2>
 
-            <div className='bg-gradient-to-br from-teal-400 text-white to-sky-800 btn rounded-md flex py-3 justify-between items-center gap-2 my-3 px-3'>
-                <img src="https://susteam.at/static/pictures/use-cases3.png" alt="holding-crypto" className='w-32   mr-2    h-28 rounded-lg' />
+            <div className='sm:flex justify-between gap-2 items-center w-full '>
+                <div className='sm:w-full bg-gradient-to-br from-teal-400 text-white to-sky-800 btn rounded-md flex py-3 justify-between items-center gap-2 my-3 px-3'>
+                    <img src="https://susteam.at/static/pictures/use-cases3.png" alt="holding-crypto" className='w-32   mr-2    h-28 rounded-lg' />
 
-                <div className='flex flex-col justify-center items-start gap-2 ml-2'>
-                    <p className='text-xl font-semibold'>Calculate your profits</p>
-                    <button className="bg-white text-black px-3 py-1 rounded-md text-sm  font-[550] flex gap-1 justify-center items-center">
-                        <span> Check Now</span>
-                        <RightArrow width={18} height={9} />
-                    </button>
+                    <div className='flex flex-col justify-center items-start gap-2 ml-2'>
+                        <p className='text-xl font-semibold'>Calculate your profits</p>
+                        <button className="bg-white text-black px-3 py-1 rounded-md text-sm  font-[550] flex gap-1 justify-center items-center">
+                            <span> Check Now</span>
+                            <RightArrow width={18} height={9} />
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div className='bg-gradient-to-br from-orange-400 text-white to-red-500 btn rounded-md flex py-3 justify-between items-center gap-2 my-3 px-3'>
-                <img src="https://api.ardmediathek.de/image-service/images/urn:ard:image:bdd80eb7b0e2080a?w=448&ch=17fdc30025937c72" alt="holding-crypto" className='w-32   mr-2    h-28 rounded-lg' />
+                <div className='sm:w-full bg-gradient-to-br from-orange-400 text-white to-red-500 btn rounded-md flex py-3 justify-between items-center gap-2 my-3 px-3'>
+                    <img src="https://api.ardmediathek.de/image-service/images/urn:ard:image:bdd80eb7b0e2080a?w=448&ch=17fdc30025937c72" alt="holding-crypto" className='w-32   mr-2    h-28 rounded-lg' />
 
-                <div className='flex flex-col justify-center items-start gap-2 ml-2'>
-                    <p className='text-xl font-semibold'>Calculate your tax liabilty</p>
-                    <button className="bg-white text-black px-3 py-1 rounded-md text-sm  font-[550] flex gap-1 justify-center items-center">
-                        <span> Check Now</span>
-                        <RightArrow width={18} height={9} />
-                    </button>
+                    <div className='flex flex-col justify-center items-start gap-2 ml-2'>
+                        <p className='text-xl font-semibold'>Calculate your tax liabilty</p>
+                        <button className="bg-white text-black px-3 py-1 rounded-md text-sm  font-[550] flex gap-1 justify-center items-center">
+                            <span> Check Now</span>
+                            <RightArrow width={18} height={9} />
+                        </button>
+                    </div>
                 </div>
             </div>
 

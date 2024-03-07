@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 const TrendingCoins = ({ trendingCoins }) => {
 
     return (
-        <div className='bg-white px-4 rounded-md pb-4 mt-2'>
+        <div className='bg-white px-4 rounded-md pb-4 mt-2 '>
             <h1 className='font-semibold text-2xl pt-4   '>Trending Coins {`(24h)`}</h1>
 
             <ul>

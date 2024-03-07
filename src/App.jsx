@@ -19,16 +19,36 @@ export default function App() {
   }, [])
   return (
     <>
+
       <Navbar />
-      <div className="mx-4 mt-2 flex flex-col gap-6 ">
+
+
+      {/* <div className="mx-4 mt-2 flex flex-col gap-6 sm:hidden ">
+
         <CoinsDetail />
         <Performance />
         <Sentiment />
         <About />
         <Team trendingCoins={trendingCoins} />
         <GetStarted />
+      </div> */}
+
+      {/* <TrendingCoins trendingCoins={trendingCoins} /> */}
+
+      <div className="flex justify-between gap-6  mx-4 my-4">
+        <div className="flex flex-col w-full gap-6">
+          <CoinsDetail />
+          <Performance />
+          <Sentiment />
+          <About />
+        </div>
+        <div className="flex flex-col w-2/6  gap-4 ">
+          <GetStarted />
+
+          <TrendingCoins trendingCoins={trendingCoins} />
+        </div>
       </div>
-      <TrendingCoins trendingCoins={trendingCoins} />
+
     </>
   )
 }
