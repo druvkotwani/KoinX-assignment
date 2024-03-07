@@ -1,6 +1,6 @@
 // TradingViewWidget.jsx
 import React, { useEffect, useRef, memo, useState } from 'react';
-
+import { useParams } from 'react-router-dom';
 const timeFrames = [
     { id: 1, name: '1H' },
     { id: 2, name: '24H' },
@@ -12,6 +12,7 @@ const timeFrames = [
 ];
 
 function TradingViewWidget() {
+    const { coinName } = useParams();
     const container = useRef();
     const [selectedTimeFrame, setSelectedTimeFrame] = useState('1M');
 
@@ -45,7 +46,7 @@ function TradingViewWidget() {
     return (
         <>
             <div className='flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4'>
-                <p className='text-base font-semibold'>Bitcoin Price Chart {"(USD)"}</p>
+                <p className='text-base font-semibold'>{coinName} Price Chart {"(USD)"}</p>
 
                 <ul className='flex justify-center items-center gap-1 sm:gap-2 text-xs'>
                     {

@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BitcoinLogo, Doge, Ethereum } from '../../utils/Icons'
 import TradingViewWidget from '../Chart/TradingViewWidget'
 import { useParams } from 'react-router-dom'
 function CoinsDetail() {
     const { coinName } = useParams();
+    const [price, setPrice] = useState(46953.04);
+    const [change, setChange] = useState(2.51);
+
+    let priceInr = price * 80.5;
+
+    useEffect(() => {
+        const lowerCaseCoinName = coinName.toLowerCase();
+
+        fetch(`https://api.coingecko.com/api/v3/simple/price?ids=${lowerCaseCoinName}&vs_currencies=usd&include_24hr_change=true`)
+            .then(response => response.json())
+            .then(data => {
+                setPrice(data[lowerCaseCoinName].usd)
+                setChange(data[lowerCaseCoinName].usd_24h_change)
+
+            })
+    }, [])
     return (
         <div className='md:bg-white md:rounded-lg '>
 
@@ -35,14 +51,17 @@ function CoinsDetail() {
             <div className=' bg-white rounded-lg sm:border-none border px-4 md:h-[580px] h-[500px]    '>
                 <div className='flex flex-col justify-center items-start gap-2 py-4 sm:pt-0 border-b '>
                     <div className='flex justify-start items-center gap-8 mt-2'>
-                        <p className='font-[540] text-3xl '>$46,953.04</p>
+                        <p className='font-[540] text-3xl '>${price.toLocaleString()}</p>
 
                         <div className='flex justify-center items-center gap-2 ml-2'>
-                            <span className='text-sm  px-2 py-1 font-medium bg-[#eaf8f4]  text-[#15b179] rounded-md '>▲ 2.51%</span>
+
+                            <span className={`text-sm  px-2 py-1 font-medium   ${change > 0 ? `text-[#15b179] bg-[#eaf8f4]` : `text-[red] bg-[#fdeae9]`} rounded-md`}>
+                                {change > 0 ? `▲ ${change.toFixed(2)}%` : `▼ ${change.toFixed(2) * -1}%`}
+                            </span>
                             <span className='text-sm font-[540]  text-[#5d667b] '>(24H)</span>
                         </div>
                     </div>
-                    <p className='text-sm font-medium'>₹ 39,42,343</p>
+                    <p className='text-sm font-medium'>₹ {priceInr.toLocaleString()}</p>
                 </div>
 
                 <div className='mt-4   md:h-[400px] h-[300px]'>
