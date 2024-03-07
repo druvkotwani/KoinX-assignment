@@ -20,7 +20,7 @@ body {
 .slick-dots li button:before,
 .slick-next:before,
 .slick-prev:before {
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 .slick-next:before {
