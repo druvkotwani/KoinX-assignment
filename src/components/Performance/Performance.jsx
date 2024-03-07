@@ -14,7 +14,10 @@ const Performance = () => {
                     <p className='font-semibold lg:text-lg'>46,930.22</p>
                 </div>
 
-                <div className='bg-gradient-to-r from-[#ff4b41] via-[#ff5f37] to-[#57DE4C] h-[6px] w-[120px] lg:w-[650px] rounded-md  '></div>
+                <div className='bg-gradient-to-r from-[#ff4b41] via-[#ff5f37] to-[#57DE4C] h-[6px] md:w-4/6 w-[40%]  flex flex-col rounded-md  '>
+                    <span className='ml-[70%]'>▲</span>
+                    <span className='md:ml-[65%] ml-[53%]'>$48,637.83</span>
+                </div>
                 <div className='flex flex-col justify-center items-end gap-2'>
                     <p className='lg:text-base'>Today's High</p>
                     <p className='font-semibold lg:text-lg'>49,343.83</p>
@@ -26,7 +29,7 @@ const Performance = () => {
                     <p className='lg:text-base'>52W Low</p>
                     <p className='font-semibold lg:text-lg'>16,930.22</p>
                 </div>
-                <div className='bg-gradient-to-r from-[#ff4b41] via-[#ff5f37] to-[#57DE4C] h-[6px] w-[120px] lg:w-[650px] rounded-md  '></div>
+                <div className='bg-gradient-to-r from-[#ff4b41] via-[#ff5f37] to-[#57DE4C] h-[6px] md:w-4/6 w-[40%] rounded-md  '></div>
 
                 <div className='text-sm flex flex-col justify-center items-end gap-2 '>
                     <p className='lg:text-base'>52W High</p>

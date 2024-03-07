@@ -93,8 +93,8 @@ const KeyEvents = () => {
                                     }
 
                                     <div className='flex flex-col gap-2'>
-                                        <h1 className='text-sm font-semibold'>{item.heading}</h1>
-                                        <p className='text-xs'>{item.content}</p>
+                                        <h1 className='text-sm md:text-base font-semibold'>{item.heading}</h1>
+                                        <p className='text-xs md:text-sm'>{item.content}</p>
                                     </div>
                                 </div>
 

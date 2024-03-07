@@ -23,13 +23,13 @@ const Fundamentals = () => {
                         <span className='text-[#778296]   '>7d Low / 7d High</span>
                         <span className=''>$16,382.46 / $16,874.12</span>
                     </li>
-                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2 lg:py-4'>
+                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2 md:py-4'>
                         <span className='text-[#778296]'>Trading Value</span>
                         <span className=''>$23,249,202,782</span>
 
 
                     </li>
-                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2 lg:py-4'>
+                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2 md:py-4'>
                         <span className='text-[#778296]'>Market Cap Rank</span>
                         <span className=''>#1</span>
 
