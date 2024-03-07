@@ -5,12 +5,12 @@ const Fundamentals = () => {
     return (
         <div className='bg-white my-2 rounded-md font-sans' >
             <div className='flex items-center justify-start  '>
-                <h1 className='font-semibold text-xl pl-2 pr-2 text-[#44465a]'>Fundamentals</h1>
+                <h1 className='font-semibold text-xl pl-2 pr-2 text-[#44465a] lg:text-2xl'>Fundamentals</h1>
                 <InfoIcon className='mt-1' />
             </div>
-            <ul className='px-2 text-sm font-sans font-[550] sm:flex justify-between items-start gap-12 '>
+            <ul className='px-2 text-sm lg:text-base font-sans font-[550] sm:flex justify-between items-start gap-12 '>
 
-                <div className='sm:w-full'>
+                <div className='sm:w-full '>
                     <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2'>
                         <span className='text-[#778296]  '>Bitcoin Price</span>
                         <span className=''>$16,815.46</span>
@@ -23,11 +23,16 @@ const Fundamentals = () => {
                         <span className='text-[#778296]   '>7d Low / 7d High</span>
                         <span className=''>$16,382.46 / $16,874.12</span>
                     </li>
-                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2'>
+                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2 lg:py-4'>
                         <span className='text-[#778296]'>Trading Value</span>
+                        <span className=''>$23,249,202,782</span>
+
+
                     </li>
-                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2'>
+                    <li className='flex justify-between items-center gap-4 mt-3 border-b pb-2 lg:py-4'>
                         <span className='text-[#778296]'>Market Cap Rank</span>
+                        <span className=''>#1</span>
+
                     </li>
                 </div>
                 <div className='sm:w-full'>

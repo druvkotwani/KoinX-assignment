@@ -57,8 +57,8 @@ function TradingViewWidget() {
                     }
                 </ul>
             </div>
-            <div className="tradingview-widget-container border-none outline-none mb-4 h-full" ref={container} style={{ height: "100%", width: "100%" }}>
-                <div className="tradingview-widget-container__widget border-none outline-none h-full" style={{ height: "calc(100% - 32px)", width: "100%" }}></div>
+            <div className="tradingview-widget-container border-none outline-none mb-4 h-full" ref={container} style={{ height: "100%", width: "100%", outline: "none", border: 'none' }}>
+                <div className="tradingview-widget-container__widget border-none outline-none h-full" style={{ height: "calc(100% - 32px)", width: "100%", outline: "none", border: 'none' }}></div>
             </div>
 
 
