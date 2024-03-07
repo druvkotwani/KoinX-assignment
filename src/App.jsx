@@ -9,6 +9,7 @@ import Sentiment from "./components/Sentiment/Sentiment";
 import Performance from "./components/Performance/Performance";
 import TotalSectioins from "./components/Sections/TotalSectioins";
 import Tokenomics from "./components/Tokenomics/Tokenomics";
+import YouMayAlsoLike from "./components/YouMayAlsoLike/YouMayAlsoLike";
 
 export default function App() {
   const [trendingCoins, setTrendingCoins] = useState([])
@@ -40,6 +41,7 @@ export default function App() {
           <Team trendingCoins={trendingCoins} />
         </div>
 
+
         {/* for desktop */}
         <div className=" flex-col  md:w-[40%] lg:w-[30%] xl:w-[25%]  gap-4 hidden md:flex ">
           <GetStarted />
@@ -54,7 +56,10 @@ export default function App() {
       <div className="md:hidden">
         <TrendingCoins trendingCoins={trendingCoins} />
       </div>
-
+      <div className="bg-white p-12 mt-12 hidden sm:block">
+        <YouMayAlsoLike trendingCoins={trendingCoins} />
+        <YouMayAlsoLike trendingCoins={trendingCoins} />
+      </div>
     </div>
   )
 }

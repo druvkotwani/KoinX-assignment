@@ -44,8 +44,10 @@ const Team = ({ trendingCoins }) => {
                     )
                 })
             }
-            <YouMayAlsoLike trendingCoins={trendingCoins} />
-            <YouMayAlsoLike trendingCoins={trendingCoins} />
+            <div className='sm:hidden'>
+                <YouMayAlsoLike trendingCoins={trendingCoins} />
+                <YouMayAlsoLike trendingCoins={trendingCoins} />
+            </div>
         </div>
 
     )

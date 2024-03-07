@@ -40,7 +40,7 @@ const YouMayAlsoLike = ({ trendingCoins }) => {
     };
     return (
         <div className='mb-2'>
-            <h1 className='font-bold text-xl pt-2'>You May Also Like</h1>
+            <h1 className='font-bold text-xl pt-2 px-2'>You May Also Like</h1>
 
             <div className='slider-container mt-2'>
                 <Slider {...settings} className='  ' >
@@ -89,7 +89,7 @@ export function SamplePrevArrow(props) {
     return (
         <div
             className={`${className} prev-arrow`}
-            style={{ ...style, marginLeft: '20px', display: "flex", backgroundColor: 'white', boxShadow: "0px 0px  5px black", zIndex: 1, justifyContent: "center", alignItems: "center" }}
+            style={{ ...style, marginLeft: '12px', display: "flex", backgroundColor: 'white', boxShadow: "0px 0px  5px black", zIndex: 1, justifyContent: "center", alignItems: "center" }}
             onClick={onClick}
         />
     );
