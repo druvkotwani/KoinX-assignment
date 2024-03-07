@@ -14,7 +14,7 @@ const GetStarted = () => {
 
             <a href="https://app.koinx.com?r=koinx_website" target="_blank" rel="noreferrer" className='my-3 '>
                 <button className="bg-white text-black px-6 py-3 rounded-lg text-sm  font-[550] flex gap-1 justify-center items-center">
-                    <span> Get Started for FREE</span>
+                    <span className='mr-1'> Get Started for FREE</span>
                     <RightArrow />
                 </button>
             </a>

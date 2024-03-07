@@ -35,7 +35,7 @@ export default function App() {
 
       {/* <TrendingCoins trendingCoins={trendingCoins} /> */}
 
-      <div className="flex justify-between   gap-6 mx-4 my-4">
+      <div className="md:flex justify-between  gap-6 mx-4 my-4">
         <div className="flex flex-col md:w-[60%] lg:w-[70%] xl:w-[75%] w-[100%]  gap-6">
           <CoinsDetail />
           <Performance />
@@ -43,11 +43,20 @@ export default function App() {
           <About />
           <Team trendingCoins={trendingCoins} />
         </div>
+
+        {/* for desktop */}
         <div className=" flex-col  md:w-[40%] lg:w-[30%] xl:w-[25%]  gap-4 hidden md:flex ">
           <GetStarted />
-
           <TrendingCoins trendingCoins={trendingCoins} />
         </div>
+      </div>
+
+      {/* for mobile */}
+      <div className="md:hidden mx-4 my-6 ">
+        <GetStarted />
+      </div>
+      <div className="md:hidden">
+        <TrendingCoins trendingCoins={trendingCoins} />
       </div>
 
     </div>
