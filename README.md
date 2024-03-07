@@ -5,7 +5,7 @@ This project is the assignment given to us by Guna Shekar Proddaturi from KoinX.
 ## Screenshots
 
 ![image](https://github.com/druvkotwani/KoinX-assignment/assets/96691139/e8f6efb5-31fb-4f6c-b33c-4563738f9a28)
-![image](https://github.com/druvkotwani/KoinX-assignment/assets/96691139/12c23b9e-f73b-4033-85e3-33edf78a4f50)
+![image](https://github.com/druvkotwani/KoinX-assignment/assets/96691139/dccbed6d-b574-467a-ba5d-54981cc1f6d9)
 
 
 
