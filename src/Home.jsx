@@ -15,7 +15,7 @@ const Home = () => {
         <div>
             <Navbar />
 
-            <div className="mx-4  flex justify-center items-center  gap-6 mt-6">
+            <div className="mx-4  flex justify-center items-center  gap-6 mt-6 flex-col sm:flex-row">
                 <Link to="/coin/Bitcoin" className="text-lg p-4 px-6 text-white bg-sky-600 rounded-md">/bitcoin</Link>
                 <Link to="/coin/Ethereum" className="text-lg p-4 px-6 text-white bg-sky-600 rounded-md">/ethereum</Link>
                 <Link to="/coin/Dogecoin" className="text-lg p-4 px-6 text-white bg-sky-600 rounded-md">/dogecoin</Link>
