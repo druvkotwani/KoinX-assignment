@@ -53,7 +53,9 @@ const YouMayAlsoLike = ({ trendingCoins }) => {
                                         <div className='flex justify-start items-center'>
                                             <img src={coin.item.large} alt="trending-coin" className='w-4 h-4 lg:w-6 lg:h-6' />
                                             <p className='text-xs ml-1 lg:text-sm'>{coin.item.symbol}</p>
-                                            <span className='text-[8px] p-[2px] lg:text-[10px] bg-[#eaf8f4]  text-[#15b179] rounded-sm ml-[2px] '>+ 2.51%</span>
+                                            <span className={`text-[8px] p-[2px] lg:text-[10px]    rounded-sm ml-[4px] ${coin.item.data.price_change_percentage_24h.usd > 0 ? `text-[#15b179] bg-[#eaf8f4]` : `text-[red] bg-[#fdeae9]`} rounded-md`}>
+                                                {coin.item.data.price_change_percentage_24h.usd > 0 ? `+ ${coin.item.data.price_change_percentage_24h.usd.toFixed(2)}%` : `- ${coin.item.data.price_change_percentage_24h.usd.toFixed(2) * -1}%`}
+                                            </span>
                                         </div>
                                         <p className='text-xs lg:text-sm text-start font-semibold'>{coin.item.data.price}</p>
                                         <img src={coin.item.data.sparkline} alt="sparkline" className='w-24 lg:w-28 lg:h-10 h-8 mx-3' />
