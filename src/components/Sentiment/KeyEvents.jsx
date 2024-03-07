@@ -1,8 +1,8 @@
 import React from 'react'
-import { GoIcon, InfoIcon, NewsIcon } from '../../../utils/Icons'
+import { GoIcon, InfoIcon, NewsIcon } from '../../utils/Icons'
 import Slider from "react-slick";
-import '../../../App.css'
-import { SampleNextArrow, SamplePrevArrow } from '../../YouMayAlsoLike/YouMayAlsoLike';
+import '../../App.css'
+import { SampleNextArrow, SamplePrevArrow } from '../YouMayAlsoLike/YouMayAlsoLike';
 const items = [
     {
         heading: 'Loerem psum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incid Ipsum',

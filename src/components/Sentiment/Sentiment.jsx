@@ -1,6 +1,5 @@
 import React from 'react'
-import Fundamentals from '../Fundamentals/Fundamentals'
-import KeyEvents from './KeyEvents/KeyEvents'
+import KeyEvents from './KeyEvents'
 import AnalystEstimates from './AnalystEstimates'
 
 const Sentiment = () => {
