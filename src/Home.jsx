@@ -1,16 +1,9 @@
-import React, { useEffect, useState } from 'react'
+
 import Navbar from './components/Navbar/Navbar'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-    const [trendingCoins, setTrendingCoins] = useState([])
-    useEffect(() => {
-        fetch('https://api.coingecko.com/api/v3/search/trending')
-            .then(response => response.json())
-            .then(data => {
-                setTrendingCoins(data.coins)
-            })
-    }, [])
+
     return (
         <div>
             <Navbar />

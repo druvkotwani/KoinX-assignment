@@ -6,22 +6,22 @@ import { SampleNextArrow, SamplePrevArrow } from '../YouMayAlsoLike/YouMayAlsoLi
 const items = [
     {
         heading: 'Loerem psum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incid Ipsum',
-        content: 'Lorem ipsum dolor sit amet,  elit. Sed do eiusmodconsectetur  elit.lor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. S Sed do eiusmod elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        content: 'Lorem ippsum dolor sit amet, elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempolor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sr incid or incididunt ut labore et dolore magna aliqua.',
         color: 'bg-[#e8f5fc]'
     },
     {
         heading: 'Loerem Ipsum psum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incid',
-        content: 'Lorem ipsum dolor sit . Sed do eiusmod elit. Sl Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        content: 'Lorem ippsum dolor sit amet, elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempolor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sr incid or incididunt ut labore et dolore magna aliqua.',
         color: 'bg-[#e8f8f4]',
     },
     {
         heading: 'Loere psum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incidm Ipsum',
-        content: 'Lorem ippsum dolor sit amet, elit. Sed do  elit. Sed do eiusmod elit. Sedlor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. S do eiusmod elit. Sed do eiusmod tempor incid or incididunt ut labore et dolore magna aliqua.',
+        content: 'Lorem ippsum dolor sit amet, elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempolor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sr incid or incididunt ut labore et dolore magna aliqua.',
         color: 'bg-[#e8f5fc]'
     },
     {
         heading: 'Loere psum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incidm Ipsum',
-        content: 'Lorem ippsum dolor sit amet, elit. Sed do eiusmo elit. Sed do eiusmod elit. Sed do eilor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Susmod elit. Sed do eiusmodd tempor incid or incididunt ut labore et dolore magna aliqua.',
+        content: 'Lorem ippsum dolor sit amet, elit. Sed do eiusmod elit. Sed do eiusmod elit. Sed do eiusmod tempolor sit amet, consect. Sed do eiusmod elit. Slor sit amet, consect. Sed do eiusmod elit. Sr incid or incididunt ut labore et dolore magna aliqua.',
         color: 'bg-[#e8f8f4]'
     },
     {
