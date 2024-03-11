@@ -26,7 +26,7 @@ Check out the website: [Website](https://koinx-assignment-dhruvkotwani.vercel.ap
 
 
 ## 🚀 Running Frontend
-To run locally, just `cd` into the `client` and run the following commands to run node modules and serve the website locally.
+To run locally, just run the following commands to run node modules and serve the website locally.
 ```bash
 npm i
 ```
@@ -35,20 +35,5 @@ npm i
 npm run dev
 ```
 
-## 🚀 Running Backend
-To run locally, just `cd` into the `server` and run the following commands to run node modules and serve the website locally.
-```bash
-npm i
-```
 
-```bash
-node index.js
-```
-
-
-
-
-<hr/>
-
-## This project is the assignment to us given by Mehar Kaila[WordleCup.io].
 ## Drop a ⭐ if you like this project.
